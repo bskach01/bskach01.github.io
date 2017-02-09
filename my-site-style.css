@@ -1,6 +1,5 @@
 body {
 	background-color: whitesmoke;
-	font-size: 14;
 	font-family: helvetica;
 }
 
@@ -58,14 +57,13 @@ li.menu-link a:hover:not(.current-page) {
 li.resume-item {
 	margin-left: 20%;
 	margin-right: 20%;
-	font-size: 12;
 }
+
 
 p {
 	text-indent: 40px;
 	margin-left: 20%;
 	margin-right: 20%;
-	font-size: 12;
 }
 
 img {
