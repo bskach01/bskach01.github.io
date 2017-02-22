@@ -16,7 +16,7 @@ h1 {
 	margin: auto;
 }
 
-#photo1, #photo2 {
+.photo {
 	width: 500px;
 	border-radius: 10px;
 	cursor: pointer;
@@ -24,7 +24,7 @@ h1 {
 	margin: 5px;
 }
 
-#photo1:hover, #photo2:hover {
+.photo:hover {
 	opacity: 0.8;
 }
 
@@ -60,7 +60,24 @@ h1 {
 	font-size: 20px;
 }
 
-.close-button, .next-button {
+.modal-image {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.5s;
+	animation-name: zoom;
+	animation-duration: 0.5s;
+}
+
+@-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)}
+	to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+}
+
+.close-button, .next-button, .back-button {
 	position: absolute;
 	color: white;
 	font-size: 50px;
@@ -84,7 +101,12 @@ h1 {
 	right: 5%;
 }
 
-.close-button:hover, .next-button:hover {
+.back-button {
+	top: 45%;
+	left: 5%;
+}
+
+.close-button:hover, .next-button:hover, .back-button:hover {
 	color: gray;
 	cursor: pointer;
 }
