@@ -3,6 +3,7 @@ var modal = document.getElementById('myModal');
 var img1 = document.getElementsByClassName("photo")[0];
 var img2 = document.getElementsByClassName("photo")[1];
 var img3 = document.getElementsByClassName("photo")[2];
+var img4 = document.getElementsByClassName("photo")[3];
 
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
@@ -25,6 +26,12 @@ img3.onclick = function() {
 	captionText.innerHTML = this.alt;
 }
 
+img4.onclick = function() {
+	modal.style.display = "block";
+	modalImg.src = this.src;
+	captionText.innerHTML = this.alt;
+}
+
 var close = document.getElementsByClassName("close-button")[0];
 close.onclick = function() {
 	modal.style.display = "none";
@@ -41,6 +48,10 @@ next.onclick = function() {
 		captionText.innerHTML = document.getElementsByClassName("photo")[2].alt;
 	}
 	else if(modalImg.src == document.getElementsByClassName("photo")[2].src) {
+		modalImg.src = document.getElementsByClassName("photo")[3].src;
+		captionText.innerHTML = document.getElementsByClassName("photo")[3].alt;
+	}
+	else if(modalImg.src == document.getElementsByClassName("photo")[3].src) {
 		modalImg.src = document.getElementsByClassName("photo")[0].src;
 		captionText.innerHTML = document.getElementsByClassName("photo")[0].alt;
 	}
@@ -53,8 +64,8 @@ next.onclick = function() {
 var back = document.getElementsByClassName("back-button")[0];
 back.onclick = function() {
 	if (modalImg.src == document.getElementsByClassName("photo")[0].src) {
-		modalImg.src = document.getElementsByClassName("photo")[2].src;
-		captionText.innerHTML = document.getElementsByClassName("photo")[2].alt;
+		modalImg.src = document.getElementsByClassName("photo")[3].src;
+		captionText.innerHTML = document.getElementsByClassName("photo")[3].alt;
 	}
 	else if(modalImg.src == document.getElementsByClassName("photo")[1].src) {
 		modalImg.src = document.getElementsByClassName("photo")[0].src;
@@ -63,6 +74,10 @@ back.onclick = function() {
 	else if(modalImg.src == document.getElementsByClassName("photo")[2].src) {
 		modalImg.src = document.getElementsByClassName("photo")[1].src;
 		captionText.innerHTML = document.getElementsByClassName("photo")[1].alt;
+	}
+		else if(modalImg.src == document.getElementsByClassName("photo")[3].src) {
+		modalImg.src = document.getElementsByClassName("photo")[2].src;
+		captionText.innerHTML = document.getElementsByClassName("photo")[2].alt;
 	}
 	else {
 		console.log("YOU MESSED UP");
