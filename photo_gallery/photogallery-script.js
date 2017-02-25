@@ -11,35 +11,39 @@ var captionText = document.getElementById("caption");
 img1.onclick = function() {
 	modal.style.display = "block";
 	modalImg.src = this.src;
-	captionText.innerHTML = this.alt;
+//	captionText.innerHTML = this.alt;
 }
 
 img2.onclick = function() {
 	modal.style.display = "block";
 	modalImg.src = this.src;
-	captionText.innerHTML = this.alt;
+//	captionText.innerHTML = this.alt;
 }
 
 img3.onclick = function() {
 	modal.style.display = "block";
 	modalImg.src = this.src;
-	captionText.innerHTML = this.alt;
+//	captionText.innerHTML = this.alt;
 }
 
 img4.onclick = function() {
 	modal.style.display = "block";
 	modalImg.src = this.src;
-	captionText.innerHTML = this.alt;
+//	captionText.innerHTML = this.alt;
 }
 
 var close = document.getElementsByClassName("close-button")[0];
 close.onclick = function() {
+	closeModal();
+}
+
+function closeModal() {
 	modal.style.display = "none";
 }
 
 document.addEventListener ('keydown', function(e) {
 	if (e.keyCode == 27) {
-		modal.style.display = "none";
+		closeModal();
 	}
 	else if (e.keyCode == 37) {
 		previousImage();
@@ -48,6 +52,12 @@ document.addEventListener ('keydown', function(e) {
 		nextImage();
 	}
 });
+
+modal.onclick = function(event) {
+	if (event.target == modal) {
+		closeModal();
+	}
+}
 
 var next = document.getElementsByClassName("next-button")[0];
 next.onclick = function() {
