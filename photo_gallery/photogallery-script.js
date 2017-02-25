@@ -37,8 +37,24 @@ close.onclick = function() {
 	modal.style.display = "none";
 }
 
+document.addEventListener ('keydown', function(e) {
+	if (e.keyCode == 27) {
+		modal.style.display = "none";
+	}
+	else if (e.keyCode == 37) {
+		previousImage();
+	}
+	else if (e.keyCode == 39) {
+		nextImage();
+	}
+});
+
 var next = document.getElementsByClassName("next-button")[0];
 next.onclick = function() {
+	nextImage();
+}
+
+function nextImage() {
 	if (modalImg.src == document.getElementsByClassName("photo")[0].src) {
 		modalImg.src = document.getElementsByClassName("photo")[1].src;
 		captionText.innerHTML = document.getElementsByClassName("photo")[1].alt;
@@ -55,14 +71,14 @@ next.onclick = function() {
 		modalImg.src = document.getElementsByClassName("photo")[0].src;
 		captionText.innerHTML = document.getElementsByClassName("photo")[0].alt;
 	}
-	else {
-		console.log("YOU MESSED UP");
-		modal.style.display = "none";
-	}
 }
 
 var back = document.getElementsByClassName("back-button")[0];
 back.onclick = function() {
+	previousImage();
+}
+
+function previousImage() {
 	if (modalImg.src == document.getElementsByClassName("photo")[0].src) {
 		modalImg.src = document.getElementsByClassName("photo")[3].src;
 		captionText.innerHTML = document.getElementsByClassName("photo")[3].alt;
@@ -75,13 +91,10 @@ back.onclick = function() {
 		modalImg.src = document.getElementsByClassName("photo")[1].src;
 		captionText.innerHTML = document.getElementsByClassName("photo")[1].alt;
 	}
-		else if(modalImg.src == document.getElementsByClassName("photo")[3].src) {
+	else if(modalImg.src == document.getElementsByClassName("photo")[3].src) {
 		modalImg.src = document.getElementsByClassName("photo")[2].src;
 		captionText.innerHTML = document.getElementsByClassName("photo")[2].alt;
 	}
-	else {
-		console.log("YOU MESSED UP");
-		modal.style.display = "none";
-	}
 }
+
 

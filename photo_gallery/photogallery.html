@@ -1,4 +1,3 @@
-<!doctype html>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -25,24 +24,30 @@
 		</ul>
 
 		<div class="images">
-			<img class="photo" src="photos/hawaii-sky.jpg" alt="Big Island Sunset"/>
+			<div class="photo-row">
+				<a class="photo-link" href="nature.html">
+					<img class="photo" src="photos/hawaii-sky.jpg" alt="Big Island Sunset"/>
+					<span class="category"> Nature </span>
+				</a>
 			
-			<img class="photo" src="photos/gokyo-sunrise.jpg" alt="Sunrise from Gokyo Ri"/>
+				<a class="photo-link" href="explore.html">
+					<img class="photo" src="photos/gokyo-sunrise.jpg" alt="Sunrise from Gokyo Ri"/>
+					<span class="category"> Exploration </span>
+				</a>
+			</div>
 
-			<img class="photo" src="photos/pres-lawn.jpg" alt="Tufts Pres Lawn at Night"/>
+			<div class="photo-row">
+				<a class="photo-link" href="people.html">
+					<img class="photo" src="photos/annie.jpg" alt="Enjoying Pololu Valley"/>
+					<span class="category"> People </span>
+				</a>
 
-			<img class="photo" src="photos/cherry-sunrise.jpg" alt="Sunrise in the White Mountains"/>
+				<a class="photo-link" href="city.html">
+					<img class="photo" src="photos/pres-lawn.jpg" alt="Tufts Pres Lawn at Night"/>
+					<span class="category"> City </span>
+				</a>
+			</div>
 		</div>
 
-		<div id="myModal" class="modal">
-			<span class="close-button">&times;</span>
-			<span class="next-button">&gt;</span>
-			<span class="back-button">&lt;</span>
-			<img class="modal-image" id="img01">
-			<div id="caption"></div>
-			
-		</div>
-
-		<script src="photogallery-script.js"></script>
 	</body>
 </html>

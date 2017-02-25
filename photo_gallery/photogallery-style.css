@@ -16,8 +16,9 @@ h1 {
 }
 
 .images {
-	width: 1030px;
+	width: 100%;
 	margin: auto;
+	margin-top: 10px;
 }
 
 .photo {
@@ -25,17 +26,53 @@ h1 {
 	border-radius: 10px;
 	cursor: pointer;
 	transition: 0.5s;
-	margin: 5px;
+	margin: auto;
+	z-index: 1;
 }
 
-.photo:hover {
-	opacity: 0.8;
+.category {
+	position: absolute;
+	text-align: center;
+	left: 0;
+	top: 138px;
+	width: 100%;
+	font-size: 50px;
+	font-family: helvetica;
+	font-weight: bold;
+	color: black;
+	z-index: 1;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.photo-link:hover > .photo {
+	opacity: 0.6;
+}
+
+.photo-row {
+	margin: auto;
+	width: 1005px;
+}
+
+.photo-link {
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 500px;
+	height: 335px;
+	border-radius: 10px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.photo-link:hover > .category {
+	opacity: 1;
 }
 
 .modal {
 	display: none;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	padding-top: 50px;
 	left: 0;
 	top: 0;
@@ -55,7 +92,7 @@ h1 {
 #caption {
 	margin: auto;
 	display: block;
-	width: 80%
+	width: 80%;
 	max-width: 3800px;
 	text-align: center;
 	color: white;
@@ -71,11 +108,6 @@ h1 {
 	animation-duration: 0.5s;
 }
 
-@-webkit-keyframes zoom {
-	from {-webkit-transform:scale(0)}
-	to {-webkit-transform:scale(1)}
-}
-
 @keyframes zoom {
 	from {transform:scale(0)}
 	to {transform:scale(1)}
@@ -87,6 +119,10 @@ h1 {
 	font-size: 50px;
 	font-weight: bold;
 	transition: 0.5s;
+}
+
+.close-button, .next-button, .back-button, .category, .modal-image,
+.photo, .back-home {
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -110,7 +146,8 @@ h1 {
 	left: 5%;
 }
 
-.close-button:hover, .next-button:hover, .back-button:hover {
+.close-button:hover, .next-button:hover, .back-button:hover,
+.back-home:hover {
 	color: gray;
 	cursor: pointer;
 }
@@ -157,6 +194,7 @@ li.dropdown-item {
 	position: absolute;
 	background-color: gray;
 	min-width: 160px;
+	z-index: 2;
 }
 
 .dropdown-menu a {
@@ -176,6 +214,16 @@ li.dropdown-item {
 	display: block;
 }
 
+.back-home {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	font-size: 18px;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+	transition: 0.2s;
+}
 
 
 

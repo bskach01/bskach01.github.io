@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Exploration </title>
+		<link rel="stylesheet" type="text/css" href="photogallery-style.css">
+	</head>
+	<body>
+		<h1> Exploration </h1>
+
+		<ul class="menu">
+			<li class="menu-link"> <a href="../index.html"> Home </a> </li>
+			<li class="dropdown-item">
+					<a href="javascript:void(0)" class="dropdown-button">Projects</a>
+					<div class="dropdown-menu">
+						<a href="../bio.html"> Biography </a>
+						<a href="../resume.html"> Resume </a>
+						<a href="photogallery.html"> Photo Gallery </a>
+					</div>
+			</li>
+			<li class="menu-link"> <a href="../bio.html"> Biography </a> </li>
+			<li class="menu-link"> <a href="../resume.html"> Resume </a></li>
+			<li class="menu-link"> <a href="../contact.html"> Contact Me </a></li>
+		</ul>
+
+		<div class="images">
+			<div class="photo-row">
+				<div class="photo-link">
+					<img class="photo" src="photos/gokyo-sunrise.jpg" alt="Sunrise from Goyko Ri"/>
+				</div>
+			
+				<div class="photo-link">
+					<img class="photo" src="photos/explore/cherry-sunrise.jpg" alt="Sunrise in the White Mountains"/>
+				</div>
+			</div>
+
+			<div class="photo-row">
+				<div class="photo-link">
+					<img class="photo" src="photos/explore/nilgiri-bridge.jpg" alt="A Bridge in Mustang"/>
+				</div>
+
+				<div class="photo-link">
+					<img class="photo" src="photos/explore/tyler-lookout.jpg" alt="Hiking Throuh Dusk"/>
+				</div>
+			</div>
+		</div>	
+
+		<a class="back-home" href="photogallery.html">
+			<span> Back to Main Gallery </span>
+		</a>
+
+		<div id="myModal" class="modal">
+			<span class="close-button"> &times; </span>
+			<span class="next-button"> &gt; </span>
+			<span class="back-button"> &lt; </span>
+			<img class="modal-image" id="img01">
+			<div id="caption"></div>
+			
+		</div>
+
+		<script src="photogallery-script.js"></script>
+	</body>
+</html>
