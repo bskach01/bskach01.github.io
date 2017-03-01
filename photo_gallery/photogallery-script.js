@@ -11,25 +11,25 @@ var captionText = document.getElementById("caption");
 img1.onclick = function() {
 	modal.style.display = "block";
 	modalImg.src = this.src;
-//	captionText.innerHTML = this.alt;
+	captionText.innerHTML = this.alt;
 }
 
 img2.onclick = function() {
 	modal.style.display = "block";
 	modalImg.src = this.src;
-//	captionText.innerHTML = this.alt;
+	captionText.innerHTML = this.alt;
 }
 
 img3.onclick = function() {
 	modal.style.display = "block";
 	modalImg.src = this.src;
-//	captionText.innerHTML = this.alt;
+	captionText.innerHTML = this.alt;
 }
 
 img4.onclick = function() {
 	modal.style.display = "block";
 	modalImg.src = this.src;
-//	captionText.innerHTML = this.alt;
+	captionText.innerHTML = this.alt;
 }
 
 var close = document.getElementsByClassName("close-button")[0];
