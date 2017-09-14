@@ -23,6 +23,13 @@ h2 {
 	color: #1E4979;
 }
 
+.center-h2 {
+	text-align: center;
+	color: #1E4979;
+	text-shadow: 1px 1px 2px white;
+	padding-top: 5px;
+}
+
 .web-links {
 	text-indent: 40px;
 	margin-left: 20%;
@@ -102,7 +109,7 @@ li.resume-item {
 	display: block;
 }
 
-p {
+.bio {
 	text-indent: 40px;
 	margin-left: 20%;
 	margin-right: 20%;
@@ -127,4 +134,34 @@ img.resume {
 	display: block;
 	margin: auto;
 	max-width: 70%;
+}
+
+.images {
+	width: 100%;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.photo-row {
+	margin: auto;
+	background: #BDBDBD;
+	background: linear-gradient(to bottom right, #CEE3F6, #6E6E6E);
+	width: 1050px;
+	border-radius: 10px;
+	margin-top: 20px;
+
+}
+
+.social-post {
+	width: 500px;
+	border-radius: 0px;
+	margin: 10px;
+	margin-bottom: 25px;
+	z-index: 1;
+	box-shadow: 5px 5px 10px 5px #424242;
+	vertical-align: middle;
+}
+
+.portfolio-description {
+	text-align: center;
 }
