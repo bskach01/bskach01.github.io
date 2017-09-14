@@ -1,5 +1,5 @@
 body {
-	background-color: whitesmoke;
+	background-color: white;
 	font-family: helvetica;
 }
 
@@ -7,23 +7,24 @@ h1 {
 	margin: auto;
 	margin-bottom: 10px;
 	text-align: center;
-	color: white;
-	background-color: darkslategray;
+	color: black;
+	background-color: #1E4979;
 	width: 30%;
 	min-width: 300px;
 	line-height: 100px;
+	box-shadow: 2px 2px 5px 2px #666666;
 }
 
 h2 {
 	margin-left: 25%;
-	color: darkgoldenrod;
+	color: #1E4979;
 }
 
 .web-links {
 	text-indent: 40px;
 	margin-left: 20%;
 	margin-right: 20%;
-	color: darkslategray;
+	color: #1E4979;
 }
 
 .plain-text {
@@ -37,7 +38,7 @@ ul.menu {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: darkslategray;
+	background-color: #666666;
 /*	position: fixed; */
 }
 
@@ -53,7 +54,7 @@ li.menu-link a, .dropdown-button {
 	padding: 10px;
 	text-decoration: none;
 	border-right: 1px solid;
-	border-color: whitesmoke;
+	border-color: white;
 }
 
 li.menu-link a:hover:not(.current-page), .dropdown-item:hover {
@@ -65,7 +66,7 @@ li.dropdown-item {
 }
 
 .current-page {
-	background-color: darkgoldenrod;
+	background-color: #1E4979;
 }
 
 li.resume-item {
@@ -114,4 +115,10 @@ img.portrait {
 	display: block;
 	margin: auto;
 	max-width: 500px;
+}
+
+img.resume {
+	display: block;
+	margin: auto;
+	max-width: 70%;
 }
