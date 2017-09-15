@@ -1,4 +1,4 @@
-var modal = document.getElementById('myModal');
+/*var modal = document.getElementById('myModal');
 
 var img1 = document.getElementsByClassName("social-post")[0];
 var img2 = document.getElementsByClassName("social-post")[1];
@@ -8,6 +8,7 @@ var img4 = document.getElementsByClassName("social-post")[3];
 var modalImg = document.getElementById("img01");
 
 img1.onclick = function() {
+	alert("clicked image1");
 	modal.style.display = "block";
 	modalImg.src = this.src;
 }
@@ -31,6 +32,7 @@ var close = document.getElementsByClassName("close-button")[0];
 
 close.onclick = function() {
 	closeModal();
+	console.log('closed!');
 }
 
 function closeModal() {
@@ -40,11 +42,14 @@ function closeModal() {
 modal.onclick = function(event) {
 	if (event.target == modal) {
 		closeModal();
+		console.log('click!');
 	}
 }
 
 document.addEventListener ('keydown', function(e) {
 	if (e.keyCode == 27) {
+		console.log('escape');
 		closeModal();
 	}
 });
+*/
