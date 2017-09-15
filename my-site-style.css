@@ -23,6 +23,55 @@ h2 {
 	color: #1E4979;
 }
 
+.home-photo {
+	width: 500px;
+	height: auto;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+}
+
+.page-links {
+	position: absolute;
+	top: 350px;
+	left: 700px;
+}
+
+.page-link-button {
+	width: 150px;
+}
+
+
+.circle {
+	width: 150px;
+	height: 150px;
+	background: linear-gradient(to bottom right, #666666, #1E4979);;
+	border-radius: 10px	;
+	display: inline-block;
+	box-shadow: 2px 2px 4px 0px gray;
+	margin: 20px;
+	line-height: 9.2em;
+	cursor: pointer;
+}
+
+.link-title {
+	display: block;
+	font-size: 15pt;
+	text-shadow: 1px 1px 5px black;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+
+.link-title {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .center-h2 {
 	text-align: center;
 	color: #1E4979;
@@ -136,33 +185,3 @@ img.resume {
 	max-width: 70%;
 }
 
-.images {
-	width: 100%;
-	margin: auto;
-	margin-top: 10px;
-}
-
-.photo-row {
-	margin: auto;
-	background: #BDBDBD;
-	background: linear-gradient(to bottom right, #CEE3F6, #6E6E6E);
-	width: 1050px;
-	border-radius: 10px;
-	margin-top: 20px;
-
-}
-
-.social-post {
-	width: 500px;
-	border-radius: 0px;
-	margin: 10px;
-	margin-bottom: 25px;
-	z-index: 1;
-	box-shadow: 5px 5px 10px 5px #424242;
-	vertical-align: middle;
-	cursor: pointer;
-}
-
-.portfolio-description {
-	text-align: center;
-}
