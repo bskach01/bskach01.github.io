@@ -4,35 +4,55 @@
 	<head>
 		<title> Ben Skach Homepage</title>
 		<link rel="stylesheet" type="text/css" href="my-site-style.css">
+		<link rel="stylesheet" type="text/css" href="logo-style.css">
+
 	</head>
 	<body>
-		<h1> Ben Skach </h1>
-		<ul class="menu">
-			<li class="menu-link"> <a class="current-page" href="../assignment1/index.html"> Home </a> </li>
-			<li class="dropdown-item">
-					<a href="javascript:void(0)" class="dropdown-button">Projects</a>
-					<div class="dropdown-menu">
-						<a href="portfolio.html"> Portfolio </a>
-						<a href="photo_gallery/photogallery.html"> Photo Gallery </a>
+		<div class="header">
+			<h1> Homepage </h1>
+			<div class="logo">
+				<span class="name-title1"> Ben </span>
+				<div class="logo-line1"> </div>
+				<span class="name-title2"> Skach </span>
+				<div class="logo-line2"> </div>
+			</div>
+
+			<ul class="menu">
+				<li class="menu-link"> <a class="current-page" href="../assignment1/index.html"> Home </a> </li>
+				<li class="dropdown-item">
+						<a href="javascript:void(0)" class="dropdown-button">Projects</a>
+						<div class="dropdown-menu">
+							<a href="portfolio.html"> Portfolio </a>
+							<a href="photo_gallery/photogallery.html"> Photo Gallery </a>
+						</div>
+				</li>
+				<li class="menu-link"> <a href="bio.html"> Biography </a> </li>
+				<li class="menu-link"> <a href="resume.html"> Resume </a></li>
+				<li class="menu-link"> <a href="contact.html"> Contact Me </a></li>
+			</ul>
+		</div>
+
+		<div class="page-body">
+		<div class="home-page">
+			<img class="home-photo" src="mountainphoto.jpg" alt="Mt. Everest" />
+			<div class="welcome-text">
+				<h2>Welcome to my page!</h2>
+				<p> This site contains my resume, work I have done, and a gallery of my photography. I designed this website from scratch using HTML, CSS, and JavaScript. </p>
+			</div>
+			<div class="page-links">
+				<a class="page-link-button" href="portfolio.html">
+					<div class="button-shape">
+					<span class="link-title"> Portfolio </span>
 					</div>
-			</li>
-			<li class="menu-link"> <a href="bio.html"> Biography </a> </li>
-			<li class="menu-link"> <a href="resume.html"> Resume </a></li>
-			<li class="menu-link"> <a href="contact.html"> Contact Me </a></li>
-		</ul>
-		<img class="home-photo" src="mountainphoto.jpg" alt="Mt. Everest" />
-		<div class="page-links">
-			<a class="page-link-button" href="Portfolio.html">
-				<div class="circle">
-				<span class="link-title"> Portfolio </span>
-				</div>
-			</a>
-			<a href="photo_gallery/photogallery.html">
-				<div class="circle">
-					<span class="link-title"> Photo Gallery </span>
-				</div>
-			</a>
-			
+				</a>
+				<a class="page-link-button" href="photo_gallery/photogallery.html">
+					<div class="button-shape">
+						<div class="link-title"> Photo Gallery </div>
+					</div>
+				</a>
+
+			</div>
+		</div>
 		</div>
 	</body>
 </html>

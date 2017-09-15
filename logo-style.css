@@ -1,0 +1,52 @@
+.logo {
+	position: absolute;
+	border-style: solid;
+	border-color: black;
+	border-width: 3px;
+	width: 140px;
+	height: 80px;
+	top: 15px;
+	left: 40px;
+	text-shadow: 1px 1px 3px #666666;
+	box-shadow: 2px 2px 2px 2px #1e4979;
+}
+
+.name-title1 {
+	position: absolute;
+	font-size: 24pt;
+	font-weight: 900;
+	top: 6px;
+	left: 17px;
+	color: #1E4979;
+}
+
+.name-title2 {
+	position: absolute;
+	font-size: 24pt;
+	font-weight: 900;
+	top: 37px;
+	left: 32px;
+	color: #1E4979;
+}
+
+.logo-line1 {
+	position: absolute;
+	height: 0px;
+	width: 57px;
+	top: 38px;
+	left: 19px;
+	border-style: solid;
+	border-color: #444444;
+	border-width: 1px;
+}
+
+.logo-line2 {
+	position: absolute;
+	height: 0px;
+	width: 92px;
+	top: 69px;
+	left: 34px;
+	border-style: solid;
+	border-color: #444444;
+	border-width: 1px;
+}

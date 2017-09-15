@@ -3,26 +3,37 @@
 	<head>
 		<title> Resume </title>
 		<link rel="stylesheet" type="text/css" href="my-site-style.css">
+		<link rel="stylesheet" type="text/css" href="logo-style.css">
 	</head>
 
 	<body>
-		<h1> Resume </h1>
+		<div class="header">
+			<h1> Resume </h1>
+			<div class="logo">
+				<span class="name-title1"> Ben </span>
+				<div class="logo-line1"> </div>
+				<span class="name-title2"> Skach </span>
+				<div class="logo-line2"> </div>
+			</div>
 
-		<ul class="menu">
-			<li class="menu-link"> <a href="index.html"> Home </a> </li>
-			<li class="dropdown-item">
-					<a href="javascript:void(0)" class="dropdown-button">Projects</a>
-					<div class="dropdown-menu">
-						<a href="portfolio.html"> Portfolio </a>
-						<a href="photo_gallery/photogallery.html"> Photo Gallery </a>
-					</div>
-			</li>
-			<li class="menu-link"> <a href="bio.html"> Biography </a> </li>
-			<li class="menu-link"> <a class="current-page" href="resume.html"> Resume </a></li>
-			<li class="menu-link"> <a href="contact.html"> Contact Me </a></li>
-		</ul>
+			<ul class="menu">
+				<li class="menu-link"> <a href="index.html"> Home </a> </li>
+				<li class="dropdown-item">
+						<a href="javascript:void(0)" class="dropdown-button">Projects</a>
+						<div class="dropdown-menu">
+							<a href="portfolio.html"> Portfolio </a>
+							<a href="photo_gallery/photogallery.html"> Photo Gallery </a>
+						</div>
+				</li>
+				<li class="menu-link"> <a href="bio.html"> Biography </a> </li>
+				<li class="menu-link"> <a class="current-page" href="resume.html"> Resume </a></li>
+				<li class="menu-link"> <a href="contact.html"> Contact Me </a></li>
+			</ul>
+		</div>
 
-		<img class="resume" src="resume.jpg" alt="Resume" />
+		<div class="page-body">
+			<img class="resume" src="resume.jpg" alt="Resume" />
+		</div>
 
 	</body>
 </html>

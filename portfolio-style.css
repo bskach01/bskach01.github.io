@@ -32,7 +32,7 @@
 }
 
 .isp-cover {
-	width: 500px;
+	width: 450px;
 	border-radius: 3px;
 	margin: 40px;
 	margin-top: 5px;
@@ -45,9 +45,9 @@
 .isp-description {
 	position: absolute;
 	text-indent: 40px;
-	width: 400px;
-	top: 150px;
-	left: 600px;
+	width: 450px;
+	top: 165px;
+	left: 550px;
 }
 
 .isp-link {
@@ -61,10 +61,10 @@
 .isp-overlay {
 	opacity: 0;
 	position: absolute;
-	width: 500px;
+	width: 450px;
 	top: 200px;
 	left: 40px;
-	font-size: 40pt;
+	font-size: 35pt;
 	font-weight: 900;
 	z-index: 2;
 	color: black;
