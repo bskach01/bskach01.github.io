@@ -89,7 +89,7 @@
 .modal {
 	display: none;
 	position: fixed;
-	z-index: 2;
+	z-index: 4;
 	padding-top: 50px;
 	left: 0;
 	top: 0;
