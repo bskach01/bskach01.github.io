@@ -160,6 +160,7 @@ img.resume {
 	z-index: 1;
 	box-shadow: 5px 5px 10px 5px #424242;
 	vertical-align: middle;
+	cursor: pointer;
 }
 
 .portfolio-description {

@@ -4,6 +4,8 @@
 	<head>
 		<title> Portfolio </title>
 		<link rel="stylesheet" type="text/css" href="my-site-style.css">
+		<link rel="stylesheet" type="text/css" href="portfolio-modal.css">
+
 	</head>
 	<body>
 		<h1> Portfolio </h1>
@@ -25,10 +27,10 @@
 		<div class="images">
 			<div class="photo-row">
 				<h2 class="center-h2"> Instagram Management </h2>
-				<p class="portfolio-description"> Managed the American Hiking Society Instagram account summer 2015. developed custom posts and shared member-contributed content. </p>
+				<p class="portfolio-description"> Managed the American Hiking Society Instagram account summer 2015. Developed custom posts and shared member-contributed content. </p>
 
 				<img class="social-post" src="portfolio/instagram1.jpg" alt="instagram post 1">
-			
+				
 				<img class="social-post" src="portfolio/instagram2.jpg" alt="instagram post 2">
 			</div>
 
@@ -41,6 +43,13 @@
 				<img class="social-post" src="portfolio/twitter2.jpg" alt="twitter post 2">
 			</div>
 		</div>
+
+		<div id="myModal" class="modal">
+			<span class="close-button"> &times; </span>
+			<img class="modal-image" id="img01">			
+		</div>
+
+		<script src="portfolio-script.js"></script>
 	</body>
 
 </html>
